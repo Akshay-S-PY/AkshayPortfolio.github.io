@@ -3950,3 +3950,21 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+	.features-grid {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	  gap: 2em;
+	  text-align: center;
+	  margin-top: 2em;
+	}
+	
+	.features-grid .feature img {
+	  width: 60px;
+	  height: 60px;
+	  margin-bottom: 0.5em;
+	}
+	
+	.features-grid .feature p {
+	  font-weight: 600;
+	  margin: 0;
+	}
