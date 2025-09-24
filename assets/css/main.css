@@ -1,84 +1,106 @@
-/* Reset & base */
-body {
-  margin: 0;
-  font-family: "Segoe UI", Roboto, sans-serif;
-  background: #242943;
-  color: #fff;
+/* ========== Base ========== */
+:root{
+  --navy:#242943;
+  --navy-2:#1f2543;
+  --ink:#e8ecff;
+  --muted:#c7cbe6;
+  --accent:#9bf1ff;
+  --accent-2:#7de7ff;
+  --card-shadow:0 14px 26px rgba(0,0,0,.25);
 }
-h1, h2, h3, h4 { font-weight: 700; margin: 0 0 .5em; }
-a { color: #9bf1ff; text-decoration: none; }
-a:hover { text-decoration: underline; }
-ul { list-style: none; padding: 0; margin: 0; }
 
-/* Layout */
-.inner { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
-
-/* Header */
-#header { background: #1a1d33; padding: 1rem 2rem; position: fixed; width: 100%; z-index: 100; }
-#header .logo { font-size: 1rem; font-weight: 700; color: #fff; }
-#header nav a { color: #9bf1ff; }
-
-/* Hero */
-#hero { padding: 8rem 0 4rem; text-align: center; }
-.hero-avatar {
-  width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 1rem;
-  overflow: hidden; box-shadow: 0 0 0 4px #fff, 0 6px 20px rgba(0,0,0,.4);
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Segoe UI", Roboto, system-ui, -apple-system, Arial, sans-serif;
+  background:var(--navy);
+  color:var(--ink);
+  line-height:1.55;
 }
-.hero-avatar img { width: 100%; height: 100%; object-fit: cover; }
-.hero-title { font-size: 2.2rem; }
-.hero-sub { opacity: .7; margin-bottom: 1.2rem; }
-.hero-actions .button { margin: 0 .4rem; }
+h1,h2,h3{margin:0 0 .6rem;font-weight:800}
+h1{font-size:2.4rem}
+h2{font-size:1.6rem}
+h3{font-size:1.1rem}
+p{margin:.4rem 0 1rem;color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+ul{margin:0;padding:0;list-style:none}
+.bullets{list-style:disc;margin-left:1.2rem;color:var(--muted)}
+.bullets li{margin:.35rem 0}
 
-/* Buttons */
-.button {
-  display: inline-block; padding: .6em 1.4em; border-radius: 6px;
-  background: #9bf1ff; color: #242943; font-weight: 600; transition: .2s;
+/* layout */
+.section{padding:56px 0}
+.inner{max-width:1100px;margin:0 auto;padding:0 22px}
+.section-head{margin-bottom:18px}
+
+/* ========== Hero ========== */
+#hero{padding:92px 0 36px}
+.hero-inner{text-align:center}
+.hero-title{font-size:2.6rem;letter-spacing:.2px;margin-bottom:.25rem}
+.hero-sub{color:var(--muted);margin-bottom:18px}
+
+/* Buttons group nicely spaced */
+.hero-actions{display:flex;gap:14px;justify-content:center;margin-top:10px}
+.button{
+  display:inline-block; border-radius:8px; padding:.62em 1.2em;
+  background:var(--accent); color:#113; font-weight:700; letter-spacing:.2px;
+  box-shadow:0 6px 14px rgba(0,0,0,.25); transition:.18s ease;
 }
-.button:hover { background: #fff; }
+.button:hover{background:#fff; color:#113; transform:translateY(-1px)}
+.button.small{padding:.46em .9em; font-size:.9rem}
+.button.primary{background:#7fe8ff}
 
-/* Summary */
-#summary { padding: 4rem 0; }
-#summary ul li { margin: .5rem 0; }
+/* add breathing room between hero buttons and next section */
+#hero + .section{margin-top:20px}
 
-/* Skills */
-#skills { padding: 4rem 0; }
-.skill-badges {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px,1fr)); gap: 1.6rem;
+/* ========== Skills ========== */
+.skill-badges{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:22px;margin-top:8px
 }
-.skill { text-align: center; }
-.badge {
-  width: 90px; height: 90px; background: #fff; border-radius: 14px;
-  margin: 0 auto .5rem; display: flex; align-items: center; justify-content: center;
+.skill{text-align:center}
+.badge{
+  width:96px;height:96px;margin:0 auto 10px;border-radius:16px;background:#fff;
+  display:grid;place-items:center;box-shadow:var(--card-shadow);
+  transition:transform .12s ease, box-shadow .12s ease;
 }
-.badge img { width: 48px; height: 48px; object-fit: contain; }
-.skill span { font-weight: 600; }
+.badge:hover{transform:translateY(-3px);box-shadow:0 18px 32px rgba(0,0,0,.3)}
+.badge img{width:48px;height:48px;object-fit:contain;display:block}
+.skill span{font-weight:700}
 
-/* Projects */
-#projects { padding: 4rem 0; }
-.tiles {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 2rem;
+/* ========== Projects ========== */
+.cards{
+  --min:280px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(var(--min),1fr));
+  gap:28px;
 }
-.tiles article {
-  background: #1f2543; padding: 1rem; border-radius: 10px;
-  box-shadow: 0 8px 18px rgba(0,0,0,.25); text-align: left;
+.card{
+  background:var(--navy-2);border-radius:14px;padding:16px 18px 18px;
+  box-shadow:var(--card-shadow);
 }
-.tiles article .image { margin-bottom: .8rem; }
-.tiles article .image img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; }
-.tiles article h3 { font-size: 1.2rem; }
-.tiles article p { opacity: .8; }
+.thumb{
+  width:100%;height:180px;border-radius:10px;overflow:hidden;margin-bottom:12px;
+  background:linear-gradient(160deg,#20264a,#121736);
+}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card h3{margin:.15rem 0 .2rem;font-size:1.15rem}
+.card p{margin:0 0 12px}
+.card .actions{display:flex;gap:10px}
+.card .button.small{height:2.2em;line-height:2.2em}
 
-/* Contact */
-#contact { padding: 4rem 0; }
-#contact ul.contact li { margin: .5rem 0; }
-#contact span { font-weight: 600; margin-right: .5rem; }
+/* ========== Contact ========== */
+#contact .contact-list li{margin:.4rem 0}
+#contact .contact-list strong{color:#fff;margin-right:.35rem}
 
-/* Footer */
-#footer { background: #1a1d33; padding: 2rem; text-align: center; }
-#footer .icons { display: flex; justify-content: center; gap: 1rem; }
-#footer .icons a { color: #9bf1ff; font-size: 1.4rem; }
+/* ========== Footer ========== */
+#footer{background:#11162a;padding:22px 0;margin-top:28px}
+#footer .inner{display:flex;justify-content:center}
+#footer .icons{display:flex;gap:24px}
+#footer .icons a{font-weight:700;color:var(--accent)}
+#footer .icons a:hover{color:#fff}
 
-/* Responsive */
-@media (max-width: 640px) {
-  .hero-title { font-size: 1.8rem; }
-  .tiles article .image img { height: 140px; }
+/* ========== Responsive tweaks ========== */
+@media (max-width: 680px){
+  .hero-title{font-size:2.1rem}
+  .thumb{height:160px}
 }
