@@ -4,36 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>Akshay Shiwarkar — Portfolio</title>
-
-    <!-- ✅ Correct CSS link -->
-    <link rel="stylesheet" href="assets/css/main.css?v=7" />
+    <link rel="stylesheet" href="assets/css/main.css?v=9" />
   </head>
   <body>
     <div id="wrapper">
 
       <!-- Hero -->
-      <section id="hero">
+      <section id="hero" class="section">
         <div class="inner hero-inner">
-          <!-- Removed hero-avatar -->
           <h1 class="hero-title">Akshay Shiwarkar</h1>
           <p class="hero-sub">Data Analyst • SAP BASIS / S/4HANA</p>
           <ul class="hero-actions">
-            <li><a href="#projects" class="button">Projects</a></li>
+            <li><a href="#projects" class="button primary">Projects</a></li>
             <li><a href="#contact" class="button">Contact Me</a></li>
           </ul>
         </div>
       </section>
 
       <!-- Summary -->
-      <section id="summary">
+      <section id="summary" class="section">
         <div class="inner">
-          <header><h2>Summary</h2></header>
+          <header class="section-head">
+            <h2>Summary</h2>
+          </header>
           <p>
             Data Analyst & SAP BASIS Consultant with 2.5+ years of SAP S/4HANA administration and a Master’s in Data Analytics (Distinction).
             Skilled in migrations, tuning, incident management, and analytics workflows (Python, R, SQL, Power BI, Spark).
           </p>
-          <ul>
-            <li>SAP BASIS: installs, upgrades, tuning, role management, migrations & DR readiness.</li>
+          <ul class="bullets">
+            <li>SAP BASIS: installs, upgrades, tuning, role management, migrations &amp; DR readiness.</li>
             <li>Analytics/ML: predictive modeling, clustering, NLP, time-series, dashboards.</li>
             <li>Tooling: Python, R, SQL, Power BI/Tableau, Spark, Hadoop; DBs: HANA, Oracle, DB2, MSSQL.</li>
           </ul>
@@ -41,52 +40,83 @@
       </section>
 
       <!-- Skills -->
-      <section id="skills">
+      <section id="skills" class="section">
         <div class="inner">
-          <header><h2>Skills & Technology</h2></header>
+          <header class="section-head">
+            <h2>Skills &amp; Technology</h2>
+          </header>
+
           <ul class="skill-badges">
-            <li class="skill"><div class="badge"><img src="images/icons/sap.svg" alt="SAP"></div><span>SAP</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/hana.svg" alt="HANA"></div><span>HANA</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/azure.svg" alt="Azure"></div><span>Azure</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/aws.svg" alt="AWS"></div><span>AWS</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/powerbi.svg" alt="Power BI"></div><span>Power BI</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/tableau.svg" alt="Tableau"></div><span>Tableau</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/python.svg" alt="Python"></div><span>Python</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/r.svg" alt="R"></div><span>R</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/sql.svg" alt="SQL"></div><span>SQL</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/spark.svg" alt="Spark"></div><span>Spark</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/hadoop.svg" alt="Hadoop"></div><span>Hadoop</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/sap.svg" alt="SAP" /></div><span>SAP</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/hana.svg" alt="HANA" /></div><span>HANA</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/azure.svg" alt="Azure" /></div><span>Azure</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/aws.svg" alt="AWS" /></div><span>AWS</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/powerbi.svg" alt="Power BI" /></div><span>Power BI</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/tableau.svg" alt="Tableau" /></div><span>Tableau</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/python.svg" alt="Python" /></div><span>Python</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/r.svg" alt="R" /></div><span>R</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/sql.svg" alt="SQL" /></div><span>SQL</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/spark.svg" alt="Spark" /></div><span>Spark</span></li>
+            <li class="skill"><div class="badge"><img src="images/icons/hadoop.svg" alt="Hadoop" /></div><span>Hadoop</span></li>
           </ul>
         </div>
       </section>
 
       <!-- Projects -->
-      <section id="projects">
+      <section id="projects" class="section">
         <div class="inner">
-          <header><h2>Projects</h2></header>
-          <div class="tiles">
-            <article>
-              <span class="image"><img src="images/SDG.jpg" alt="SDG" /></span>
+          <header class="section-head">
+            <h2>Projects</h2>
+          </header>
+
+          <div class="cards">
+            <!-- SDG -->
+            <article class="card">
+              <div class="thumb">
+                <img
+                  src="images/SDG.jpg"
+                  alt="SDG Clustering"
+                  onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22240%22 viewBox=%200%200%20400%20240%3E<rect width=%22400%22 height=%22240%22 rx=%2212%22 fill=%22%231f2543%22/><text x=%2220%22 y=%22135%22 fill=%22%239bf1ff%22 font-family=%22Segoe%20UI%22 font-size=%2220%22>SDG thumbnail</text></svg>';"
+                />
+              </div>
               <h3>SDG Clustering</h3>
               <p>PCA + K-means to reveal development patterns.</p>
+              <ul class="actions">
+                <li><a class="button small" href="#" target="_blank">GitHub</a></li>
+              </ul>
             </article>
-            <article>
-              <span class="image"><img src="images/NHS.jpg" alt="NHS" /></span>
+
+            <!-- NHS -->
+            <article class="card">
+              <div class="thumb">
+                <img
+                  src="images/NHS.jpg"
+                  alt="NHS NLP"
+                  onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22240%22 viewBox=%200%200%20400%20240%3E<rect width=%22400%22 height=%22240%22 rx=%2212%22 fill=%22%231f2543%22/><text x=%2220%22 y=%22135%22 fill=%22%239bf1ff%22 font-family=%22Segoe%20UI%22 font-size=%2220%22>NHS thumbnail</text></svg>';"
+                />
+              </div>
               <h3>NHS NLP</h3>
               <p>spaCy pipeline for NER and topic modeling.</p>
+              <ul class="actions">
+                <li><a class="button small" href="#" target="_blank">GitHub</a></li>
+              </ul>
             </article>
+
+            <!-- Add more cards the same way -->
           </div>
         </div>
       </section>
 
       <!-- Contact -->
-      <section id="contact">
+      <section id="contact" class="section">
         <div class="inner">
-          <header><h2>Contact</h2></header>
-          <ul>
-            <li>Email: <a href="mailto:akshay576shiwarkar@gmail.com">akshay576shiwarkar@gmail.com</a></li>
-            <li>Phone: +44 07909313022</li>
-            <li>Location: Belfast, Northern Ireland</li>
+          <header class="section-head">
+            <h2>Contact</h2>
+          </header>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:akshay576shiwarkar@gmail.com">akshay576shiwarkar@gmail.com</a></li>
+            <li><strong>Phone:</strong> +44 07909313022</li>
+            <li><strong>Location:</strong> Belfast, Northern Ireland</li>
           </ul>
         </div>
       </section>
@@ -95,8 +125,8 @@
       <footer id="footer">
         <div class="inner">
           <ul class="icons">
-            <li><a href="https://github.com/Akshay-S-PY" class="icon brands fa-github"><span>GitHub</span></a></li>
-            <li><a href="https://linkedin.com/in/akshay-shiwarkar/" class="icon brands fa-linkedin"><span>LinkedIn</span></a></li>
+            <li><a href="https://github.com/Akshay-S-PY" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/akshay-shiwarkar/" target="_blank">LinkedIn</a></li>
           </ul>
         </div>
       </footer>
