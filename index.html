@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Akshay Shiwarkar · Portfolio</title>
 
-  <!-- Single stylesheet for everything -->
-  <link rel="stylesheet" href="assets/css/main.css?v=12" />
+  <link rel="stylesheet" href="assets/css/main.css?v=13" />
   <meta name="color-scheme" content="light dark">
 </head>
 <body>
@@ -18,17 +17,17 @@
 
       <nav class="nav-links">
         <a href="#work">Work</a>
-        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
         <a class="btn btn-pill" href="mailto:akshay576shiwarkar@gmail.com">Email me</a>
       </nav>
 
-      <!-- mobile menu (simple fallback) -->
+      <!-- mobile menu -->
       <details class="nav-mobile">
         <summary>Menu</summary>
         <div class="sheet">
           <a href="#work">Work</a>
-          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
           <a class="btn btn-pill" href="mailto:akshay576shiwarkar@gmail.com">Email me</a>
         </div>
@@ -46,7 +45,7 @@
       </h1>
       <p class="lede">
         I’m Akshay Shiwarkar — Data Analyst & SAP BASIS/S/4HANA consultant.
-        I build reliable ERP foundations and data products: from migration & tuning to ML, NLP, and dashboards.
+        I build reliable ERP foundations and data products: from migration &amp; tuning to ML, NLP, and dashboards.
       </p>
 
       <div class="actions">
@@ -56,13 +55,41 @@
     </div>
   </section>
 
-  <!-- ====== Featured Project (wide card) ====== -->
+  <!-- ====== About (short blurb under hero, above skills) ====== -->
+  <section id="about" class="section muted">
+    <div class="container narrow">
+      <p class="lede" style="margin:0">
+        I’m Akshay Shiwarkar — Data Analyst &amp; SAP BASIS/S/4HANA consultant. I build reliable ERP foundations and data
+        products: from migration &amp; tuning to ML, NLP, and dashboards.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====== Skills (with icons) ====== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="eyebrow" style="margin-bottom:10px">Skills & Technology</h2>
+      <ul class="pill-list pill-icons">
+        <li><img src="images/icons/sap.svg" alt="SAP"><span>SAP</span></li>
+        <li><img src="images/icons/HANA.svg" alt="HANA"><span>HANA</span></li>
+        <li><img src="images/icons/linux.svg" alt="Linux"><span>Linux</span></li>
+        <li><img src="images/icons/azure.svg" alt="Azure"><span>Azure</span></li>
+        <li><img src="images/icons/aws.svg" alt="AWS"><span>AWS</span></li>
+        <li><img src="images/icons/powerbi.svg" alt="Power BI"><span>Power BI</span></li>
+        <li><img src="images/icons/python.svg" alt="Python"><span>Python</span></li>
+        <li><img src="images/icons/sql.svg" alt="SQL"><span>SQL</span></li>
+        <li><img src="images/icons/GitHub.svg" alt="GitHub"><span>GitHub</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== Work (Featured + Grid) ====== -->
   <section class="section" id="work">
     <div class="container">
       <div class="grid featured">
         <article class="card wide">
           <figure class="thumb">
-            <img src="images/SDG.jpg" alt="SDG Clustering" onerror="this.style.visibility='hidden'">
+            <img src="images/SDG.png" alt="SDG Clustering" onerror="this.style.visibility='hidden'">
           </figure>
           <div class="card-body">
             <p class="eyebrow">Clustering · PCA · K-means</p>
@@ -79,8 +106,7 @@
         </article>
       </div>
 
-      <!-- ====== Projects Grid ====== -->
-      <div class="grid portfolio">
+      <div class="grid portfolio" style="margin-top:26px">
         <!-- NHS -->
         <article class="card">
           <figure class="thumb">
@@ -90,7 +116,7 @@
             <p class="eyebrow">NLP · spaCy · Topic Modeling</p>
             <h3 class="card-title">NLP Analysis of NHS Training Materials</h3>
             <p class="card-text">
-              Tokenization, word frequency, NER and topic models (LDA) to extract themes in patient care & staff training.
+              Tokenization, word frequency, NER and topic models (LDA) to extract themes in patient care &amp; staff training.
               Outputs informed content design and opportunities for AI-driven education tools.
             </p>
             <div class="card-actions">
@@ -135,31 +161,6 @@
           </div>
         </article>
       </div>
-
-      <!-- ====== Skills (compact, clean) ====== -->
-      <section class="skills" aria-label="Skills">
-        <h2 class="sr-only" id="about">Skills</h2>
-        <ul class="pill-list">
-          <li>SAP</li><li>HANA</li><li>Azure</li><li>AWS</li><li>Power BI</li>
-          <li>Tableau</li><li>Python</li><li>R</li><li>SQL</li><li>Spark</li><li>Hadoop</li>
-        </ul>
-      </section>
-    </div>
-  </section>
-
-  <!-- ====== About (your summary) ====== -->
-  <section class="section muted">
-    <div class="container narrow">
-      <h2>About</h2>
-      <p class="lede">
-        2.5+ years in SAP BASIS/S/4HANA administration and a Master’s in Data Analytics (Distinction).
-        I enjoy building reliable infrastructure and shipping analysis that changes decisions.
-      </p>
-      <ul class="bullets">
-        <li>SAP BASIS: installs, upgrades, tuning, role management, migrations &amp; DR readiness.</li>
-        <li>Analytics/ML: predictive modeling, clustering, NLP, time-series, dashboards.</li>
-        <li>Tooling: Python, R, SQL, Power BI/Tableau, Spark, Hadoop; DBs: HANA, Oracle, DB2, MSSQL.</li>
-      </ul>
     </div>
   </section>
 
@@ -185,7 +186,7 @@
         </div>
         <div>
           <h4>Navigation</h4>
-          <p><a href="#work">Work</a><br><a href="#about">About</a><br><a href="#contact">Contact</a></p>
+          <p><a href="#work">Work</a><br><a href="#skills">Skills</a><br><a href="#contact">Contact</a></p>
         </div>
       </div>
 
@@ -194,7 +195,6 @@
   </footer>
 
   <script>
-    // current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
