@@ -1,87 +1,84 @@
-/* ===========================================
-   Akshay Portfolio — Overrides for HTML5UP Forty
-   =========================================== */
-
-/* Tighter top spacing for the site (esp. hero) */
-body.is-preload #header.alt { backdrop-filter: none; }
-
-/* ---------- HERO ---------- */
-#hero.major.hero {
-  background: none;
-  border-bottom: 0 !important;
-  height: auto;
-  min-height: 0;
-  padding: 8rem 0 4rem;
+/* Reset & base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #242943;
+  color: #fff;
 }
-#hero.major.hero:after { display: none; }
-#hero .inner { padding: 0 !important; text-align: center; }
+h1, h2, h3, h4 { font-weight: 700; margin: 0 0 .5em; }
+a { color: #9bf1ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { list-style: none; padding: 0; margin: 0; }
 
+/* Layout */
+.inner { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* Header */
+#header { background: #1a1d33; padding: 1rem 2rem; position: fixed; width: 100%; z-index: 100; }
+#header .logo { font-size: 1rem; font-weight: 700; color: #fff; }
+#header nav a { color: #9bf1ff; }
+
+/* Hero */
+#hero { padding: 8rem 0 4rem; text-align: center; }
 .hero-avatar {
-  width: 132px; height: 132px; margin: 0 auto 1.25rem;
-  border-radius: 50%; overflow: hidden; background: #111827;
-  box-shadow: 0 6px 20px rgba(0,0,0,.35), inset 0 0 0 2px rgba(255,255,255,.06);
+  width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 1rem;
+  overflow: hidden; box-shadow: 0 0 0 4px #fff, 0 6px 20px rgba(0,0,0,.4);
 }
-.hero-avatar img { width: 100%; height: 100%; object-fit: cover; display:block; }
+.hero-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.hero-title { font-size: 2.2rem; }
+.hero-sub { opacity: .7; margin-bottom: 1.2rem; }
+.hero-actions .button { margin: 0 .4rem; }
 
-.hero-title { font-size: 2.2rem; margin: .25rem 0 .25rem; }
-.hero-sub { opacity: .65; margin: 0 0 1.2rem; letter-spacing: .02em; }
+/* Buttons */
+.button {
+  display: inline-block; padding: .6em 1.4em; border-radius: 6px;
+  background: #9bf1ff; color: #242943; font-weight: 600; transition: .2s;
+}
+.button:hover { background: #fff; }
 
-.hero-actions .button.primary { background:#ffffff; color:#242943 !important; box-shadow:none; }
-.hero-actions .button.primary:hover { background:#9bf1ff; color:#242943 !important; }
+/* Summary */
+#summary { padding: 4rem 0; }
+#summary ul li { margin: .5rem 0; }
 
-/* ---------- SUMMARY ---------- */
-#summary .inner > p { margin-bottom: 0.8rem; }
-#summary ul { margin-top: 0.8rem; }
-
-/* ---------- SKILLS BADGES ---------- */
+/* Skills */
+#skills { padding: 4rem 0; }
 .skill-badges {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1.8rem;
-  list-style: none;
-  margin: 1rem 0 0 0;
-  padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px,1fr)); gap: 1.6rem;
 }
 .skill { text-align: center; }
 .badge {
-  width: 96px; height: 96px; margin: 0 auto .6rem;
-  background: #ffffff; border-radius: 14px;
-  display: grid; place-items: center;
-  box-shadow: 0 10px 24px rgba(0,0,0,.18);
-  transition: transform .15s ease, box-shadow .15s ease;
+  width: 90px; height: 90px; background: #fff; border-radius: 14px;
+  margin: 0 auto .5rem; display: flex; align-items: center; justify-content: center;
 }
-.badge:hover { transform: translateY(-3px); box-shadow: 0 16px 28px rgba(0,0,0,.24); }
-.badge img { width: 48px; height: 48px; object-fit: contain; display:block; }
-.skill span { font-weight: 700; letter-spacing: .2px; }
+.badge img { width: 48px; height: 48px; object-fit: contain; }
+.skill span { font-weight: 600; }
 
-/* ---------- PROJECTS AS CARDS ---------- */
-#projects .tiles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.8rem;
+/* Projects */
+#projects { padding: 4rem 0; }
+.tiles {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 2rem;
 }
-#projects .tiles article {
-  width: 100% !important; min-height: 0; height: auto; max-height: none;
-  padding: 1rem 1rem 1.25rem;
-  background:#1f2543; border-radius: 12px; background-image: none;
-  box-shadow: 0 8px 18px rgba(0,0,0,.22);
-  cursor: default;
+.tiles article {
+  background: #1f2543; padding: 1rem; border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.25); text-align: left;
 }
-#projects .tiles article:before,
-#projects .tiles article:after { display: none !important; }
-#projects .tiles article .image { display:block; margin: 0 0 .9rem; border-radius: 10px; overflow: hidden; }
-#projects .tiles article .image img { width:100%; height:160px; object-fit: cover; display:block; }
-#projects .tiles article h3 { font-size: 1.05rem; margin-bottom: .25rem; }
-#projects .tiles article p { opacity: .78; margin-bottom: .7rem; }
-#projects .tiles article .actions .button.small {
-  height: 2.4em; line-height: 2.4em; letter-spacing:.12em;
-}
+.tiles article .image { margin-bottom: .8rem; }
+.tiles article .image img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; }
+.tiles article h3 { font-size: 1.2rem; }
+.tiles article p { opacity: .8; }
 
-/* ---------- CONTACT ---------- */
-#contact .inner { padding-top: 2rem; }
+/* Contact */
+#contact { padding: 4rem 0; }
+#contact ul.contact li { margin: .5rem 0; }
+#contact span { font-weight: 600; margin-right: .5rem; }
 
-/* ---------- UTIL ---------- */
+/* Footer */
+#footer { background: #1a1d33; padding: 2rem; text-align: center; }
+#footer .icons { display: flex; justify-content: center; gap: 1rem; }
+#footer .icons a { color: #9bf1ff; font-size: 1.4rem; }
+
+/* Responsive */
 @media (max-width: 640px) {
-  .hero-title { font-size: 1.9rem; }
-  .hero-avatar { width: 112px; height:112px; }
+  .hero-title { font-size: 1.8rem; }
+  .tiles article .image img { height: 140px; }
 }
