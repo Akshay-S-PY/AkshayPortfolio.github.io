@@ -1,167 +1,201 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Akshay Shiwarkar — Portfolio</title>
-    <link rel="stylesheet" href="assets/css/main.css?v=9" />
-  </head>
-  <body>
-    <div id="wrapper">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akshay Shiwarkar · Portfolio</title>
 
-      <!-- Hero -->
-      <section id="hero" class="section">
-        <div class="inner hero-inner">
-          <h1 class="hero-title">Akshay Shiwarkar</h1>
-          <p class="hero-sub">Data Analyst • SAP BASIS / S/4HANA</p>
-          <ul class="hero-actions">
-            <li><a href="#projects" class="button primary">Projects</a></li>
-            <li><a href="#contact" class="button">Contact Me</a></li>
-          </ul>
+  <!-- Single stylesheet for everything -->
+  <link rel="stylesheet" href="assets/css/main.css?v=12" />
+  <meta name="color-scheme" content="light dark">
+</head>
+<body>
+
+  <!-- ====== Header / Top Nav ====== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">Akshay</a>
+
+      <nav class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-pill" href="mailto:akshay576shiwarkar@gmail.com">Email me</a>
+      </nav>
+
+      <!-- mobile menu (simple fallback) -->
+      <details class="nav-mobile">
+        <summary>Menu</summary>
+        <div class="sheet">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-pill" href="mailto:akshay576shiwarkar@gmail.com">Email me</a>
         </div>
-      </section>
-
-      <!-- Summary -->
-      <section id="summary" class="section">
-        <div class="inner">
-          <header class="section-head">
-            <h2>Summary</h2>
-          </header>
-          <p>
-            Data Analyst & SAP BASIS Consultant with 2.5+ years of SAP S/4HANA administration and a Master’s in Data Analytics (Distinction).
-            Skilled in migrations, tuning, incident management, and analytics workflows (Python, R, SQL, Power BI, Spark).
-          </p>
-          <ul class="bullets">
-            <li>SAP BASIS: installs, upgrades, tuning, role management, migrations &amp; DR readiness.</li>
-            <li>Analytics/ML: predictive modeling, clustering, NLP, time-series, dashboards.</li>
-            <li>Tooling: Python, R, SQL, Power BI/Tableau, Spark, Hadoop; DBs: HANA, Oracle, DB2, MSSQL.</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skills" class="section">
-        <div class="inner">
-          <header class="section-head">
-            <h2>Skills &amp; Technology</h2>
-          </header>
-
-          <ul class="skill-badges">
-            <li class="skill"><div class="badge"><img src="images/icons/sap.svg" alt="SAP" /></div><span>SAP</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/HANA.svg" alt="HANA" /></div><span>HANA</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/azure.svg" alt="Azure" /></div><span>Azure</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/aws.svg" alt="AWS" /></div><span>AWS</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/linux.svg" alt="Linux" /></div><span>Linux</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/powerbi.svg" alt="Power BI" /></div><span>Power BI</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/python.svg" alt="Python" /></div><span>Python</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/sql.svg" alt="SQL" /></div><span>SQL</span></li>
-            <li class="skill"><div class="badge"><img src="images/icons/GitHub.svg" alt="GitHub" /></div><span>GitHub</span></li>
-
-          </ul>
-        </div>
-      </section>
-
-     <!-- Projects -->
-<section id="projects" class="section">
-  <div class="inner">
-    <header class="section-head">
-      <h2>Projects</h2>
-    </header>
-
-    <div class="cards">
-      <!-- SDG -->
-      <article class="card">
-        <div class="thumb">
-          <img src="images/SDG.png" alt="SDG Clustering" />
-        </div>
-        <h3>Classifying Countries by SDG Progress</h3>
-        <p>
-          Developed a novel approach to classify countries based on progress toward UN Sustainable Development Goals (SDGs) using Principal Component Analysis (PCA) and K-means clustering. Identified global development patterns beyond traditional groupings through comprehensive data analysis.
-        </p>
-        <ul class="actions">
-          <li><a class="button small" href="#" target="_blank">GitHub</a></li>
-        </ul>
-      </article>
-
-      <!-- NHS -->
-      <article class="card">
-        <div class="thumb">
-          <img src="images/NHS.jpg" alt="NHS NLP" />
-        </div>
-        <h3>NLP Analysis of NHS Training Materials</h3>
-        <p>
-          Analysed NHS training materials using spaCy NLP for tokenization, word frequency analysis, named entity recognition, and topic modeling. Identified key themes in patient care and staff training, offering insights to enhance education and develop AI-driven healthcare tools.
-        </p>
-        <ul class="actions">
-          <li><a class="button small" href="#" target="_blank">GitHub</a></li>
-        </ul>
-      </article>
-
-      <!-- Bitcoin -->
-      <article class="card">
-        <div class="thumb">
-          <img src="images/Bitcoin.jpg" alt="Bitcoin Prediction" />
-        </div>
-        <h3>Bitcoin Price Prediction</h3>
-        <p>
-          Predicted Bitcoin prices using regression models (Linear Regression, Random Forest, Gradient Boosting) and LSTM network, analysing data from various stock indexes. Integrated real-time data streams and sentiment analysis via Yahoo Finance API to enhance predictive accuracy, providing timely insights for the volatile cryptocurrency market.
-        </p>
-        <ul class="actions">
-          <li>
-            <a class="button small" href="https://www.kaggle.com/code/akshayshiwarkar/bitcoin-price-prediction" target="_blank">Kaggle</a>
-          </li>
-        </ul>
-      </article>
-
-      <!-- Spotify -->
-      <article class="card">
-        <div class="thumb">
-          <img src="images/Spotify.jpg" alt="Spotify Popularity" />
-        </div>
-        <h3>Spotify Classification Problem</h3>
-        <p>
-          Developed and fine-tuned a Random Forest regression model to predict song popularity. Applied feature engineering, outlier handling, and ensemble methods, outperforming other models in accuracy and achieving a competitive Kaggle Class competition ranking (RMSE ≈ 7.5).
-        </p>
-        <ul class="actions">
-          <li>
-            <a class="button small" href="https://github.com/Akshay-S-PY/Machine-Learning" target="_blank">GitHub</a>
-          </li>
-        </ul>
-      </article>
+      </details>
     </div>
-  </div>
-</section>
+  </header>
 
+  <!-- ====== Hero ====== -->
+  <section class="hero section">
+    <div class="container">
+      <p class="eyebrow">Analytics · Product · Data Engineering</p>
+      <h1 class="display">
+        Turning messy data into clear decisions.<br>
+        Let’s shape insights that ship.
+      </h1>
+      <p class="lede">
+        I’m Akshay Shiwarkar — Data Analyst & SAP BASIS/S/4HANA consultant.
+        I build reliable ERP foundations and data products: from migration & tuning to ML, NLP, and dashboards.
+      </p>
 
-      <!-- Contact -->
-      <section id="contact" class="section">
-        <div class="inner">
-          <header class="section-head">
-            <h2>Contact</h2>
-          </header>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:akshay576shiwarkar@gmail.com">akshay576shiwarkar@gmail.com</a></li>
-            <li><strong>Location:</strong> Belfast, Northern Ireland</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <ul class="icons">
-            <li><a href="https://github.com/Akshay-S-PY" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/akshay-shiwarkar/" target="_blank">LinkedIn</a></li>
-          </ul>
-        </div>
-      </footer>
-
+      <div class="actions">
+        <a class="btn btn-dark" href="#work">See my work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
     </div>
-  </body>
+  </section>
+
+  <!-- ====== Featured Project (wide card) ====== -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="grid featured">
+        <article class="card wide">
+          <figure class="thumb">
+            <img src="images/SDG.jpg" alt="SDG Clustering" onerror="this.style.visibility='hidden'">
+          </figure>
+          <div class="card-body">
+            <p class="eyebrow">Clustering · PCA · K-means</p>
+            <h3 class="card-title">Classifying Countries by SDG Progress</h3>
+            <p class="card-text">
+              Classified countries by progress toward the UN SDGs using PCA and K-means to reveal patterns beyond
+              traditional groupings. Built a clean feature space, robust scaling and validation to surface clusters that
+              align with real development trajectories.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-pill" href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ====== Projects Grid ====== -->
+      <div class="grid portfolio">
+        <!-- NHS -->
+        <article class="card">
+          <figure class="thumb">
+            <img src="images/NHS.jpg" alt="NHS NLP" onerror="this.style.visibility='hidden'">
+          </figure>
+          <div class="card-body">
+            <p class="eyebrow">NLP · spaCy · Topic Modeling</p>
+            <h3 class="card-title">NLP Analysis of NHS Training Materials</h3>
+            <p class="card-text">
+              Tokenization, word frequency, NER and topic models (LDA) to extract themes in patient care & staff training.
+              Outputs informed content design and opportunities for AI-driven education tools.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-pill" href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bitcoin -->
+        <article class="card">
+          <figure class="thumb">
+            <img src="images/Bitcoin.jpg" alt="Bitcoin Prediction" onerror="this.style.visibility='hidden'">
+          </figure>
+          <div class="card-body">
+            <p class="eyebrow">Time-series · LSTM · Ensembles</p>
+            <h3 class="card-title">Bitcoin Price Prediction</h3>
+            <p class="card-text">
+              Regression (Linear, RF, GBM) + LSTM with market indices, real-time feeds and sentiment (Yahoo Finance API).
+              Improved short-horizon accuracy for a volatile asset.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-pill" href="https://www.kaggle.com/code/akshayshiwarkar/bitcoin-price-prediction" target="_blank">Kaggle</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Spotify -->
+        <article class="card">
+          <figure class="thumb">
+            <img src="images/Spotify.jpg" alt="Spotify Popularity" onerror="this.style.visibility='hidden'">
+          </figure>
+          <div class="card-body">
+            <p class="eyebrow">Regression · Random Forest</p>
+            <h3 class="card-title">Spotify Track Popularity</h3>
+            <p class="card-text">
+              Feature engineering + outlier handling; tuned Random Forest achieved a competitive RMSE (~7.5) in a Kaggle
+              class challenge; compared against XGB/Linear baselines.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-pill" href="https://github.com/Akshay-S-PY/Machine-Learning" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ====== Skills (compact, clean) ====== -->
+      <section class="skills" aria-label="Skills">
+        <h2 class="sr-only" id="about">Skills</h2>
+        <ul class="pill-list">
+          <li>SAP</li><li>HANA</li><li>Azure</li><li>AWS</li><li>Power BI</li>
+          <li>Tableau</li><li>Python</li><li>R</li><li>SQL</li><li>Spark</li><li>Hadoop</li>
+        </ul>
+      </section>
+    </div>
+  </section>
+
+  <!-- ====== About (your summary) ====== -->
+  <section class="section muted">
+    <div class="container narrow">
+      <h2>About</h2>
+      <p class="lede">
+        2.5+ years in SAP BASIS/S/4HANA administration and a Master’s in Data Analytics (Distinction).
+        I enjoy building reliable infrastructure and shipping analysis that changes decisions.
+      </p>
+      <ul class="bullets">
+        <li>SAP BASIS: installs, upgrades, tuning, role management, migrations &amp; DR readiness.</li>
+        <li>Analytics/ML: predictive modeling, clustering, NLP, time-series, dashboards.</li>
+        <li>Tooling: Python, R, SQL, Power BI/Tableau, Spark, Hadoop; DBs: HANA, Oracle, DB2, MSSQL.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== Contact (dark footer block) ====== -->
+  <footer class="contact-footer" id="contact">
+    <div class="container contact">
+      <div class="cta">
+        <h2>Let’s start creating together</h2>
+        <p class="muted-txt">Tell me about your challenge — I’ll reply quickly.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="mailto:akshay576shiwarkar@gmail.com">Email Akshay</a>
+          <a class="btn btn-outline" href="https://linkedin.com/in/akshay-shiwarkar/" target="_blank">LinkedIn</a>
+          <a class="btn btn-outline" href="https://github.com/Akshay-S-PY" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="cols">
+        <div>
+          <h4>Contact</h4>
+          <p><strong>Email:</strong> <a href="mailto:akshay576shiwarkar@gmail.com">akshay576shiwarkar@gmail.com</a></p>
+          <p><strong>Phone:</strong> +44 07909313022</p>
+          <p><strong>Location:</strong> Belfast, Northern Ireland</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <p><a href="#work">Work</a><br><a href="#about">About</a><br><a href="#contact">Contact</a></p>
+        </div>
+      </div>
+
+      <p class="tiny">© <span id="year"></span> Akshay Shiwarkar</p>
+    </div>
+  </footer>
+
+  <script>
+    // current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
-
-
-
-
-
-
