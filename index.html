@@ -1,48 +1,28 @@
 <!DOCTYPE HTML>
-<!--
-  Portfolio — Akshay Shiwarkar
-  Based on Forty by HTML5 UP (heavily customized)
--->
-<html>
+<html lang="en">
   <head>
-    <title>Akshay Shiwarkar — Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <title>Akshay Shiwarkar — Portfolio</title>
+
+    <!-- ✅ Correct CSS link -->
+    <link rel="stylesheet" href="assets/css/main.css?v=6" />
+
+    <!-- No other CSS links for now -->
   </head>
-  <body class="is-preload">
+  <body>
     <div id="wrapper">
 
-      <!-- Header -->
-      <header id="header" class="alt">
-        <a href="index.html" class="logo">
-          <strong>Akshay</strong> <span>Data Analyst | SAP ERP Consultant</span>
-        </a>
-        <nav><a href="#menu">Menu</a></nav>
-      </header>
-
-      <!-- Menu -->
-      <nav id="menu">
-        <ul class="links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#summary">Summary</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
       <!-- Hero -->
-      <section id="hero" class="major hero">
+      <section id="hero">
         <div class="inner hero-inner">
           <div class="hero-avatar">
             <img src="images/avatar.jpg" alt="Akshay Shiwarkar" />
           </div>
           <h1 class="hero-title">Akshay Shiwarkar</h1>
           <p class="hero-sub">Data Analyst • SAP BASIS / S/4HANA</p>
-          <ul class="actions hero-actions">
-            <li><a href="#projects" class="button primary">Projects</a></li>
+          <ul class="hero-actions">
+            <li><a href="#projects" class="button">Projects</a></li>
             <li><a href="#contact" class="button">Contact Me</a></li>
           </ul>
         </div>
@@ -51,7 +31,7 @@
       <!-- Summary -->
       <section id="summary">
         <div class="inner">
-          <header class="major"><h2>Summary</h2></header>
+          <header><h2>Summary</h2></header>
           <p>
             Data Analyst & SAP BASIS Consultant with 2.5+ years of SAP S/4HANA administration and a Master’s in Data Analytics (Distinction).
             Skilled in migrations, tuning, incident management, and analytics workflows (Python, R, SQL, Power BI, Spark).
@@ -67,7 +47,7 @@
       <!-- Skills -->
       <section id="skills">
         <div class="inner">
-          <header class="major"><h2>Skills & Technology</h2></header>
+          <header><h2>Skills & Technology</h2></header>
           <ul class="skill-badges">
             <li class="skill"><div class="badge"><img src="images/icons/sap.svg" alt="SAP"></div><span>SAP</span></li>
             <li class="skill"><div class="badge"><img src="images/icons/hana.svg" alt="HANA"></div><span>HANA</span></li>
@@ -87,7 +67,7 @@
       <!-- Projects -->
       <section id="projects">
         <div class="inner">
-          <header class="major"><h2>Projects</h2></header>
+          <header><h2>Projects</h2></header>
           <div class="tiles">
             <article>
               <span class="image"><img src="images/SDG.jpg" alt="SDG" /></span>
@@ -97,27 +77,7 @@
             <article>
               <span class="image"><img src="images/NHS.jpg" alt="NHS" /></span>
               <h3>NHS NLP</h3>
-              <p>spaCy pipeline for tokenization, NER, topic modeling.</p>
-            </article>
-            <article>
-              <span class="image"><img src="images/Bitcoin.jpg" alt="Bitcoin" /></span>
-              <h3>Bitcoin Prediction</h3>
-              <p>LSTM & GBM models for price forecasting.</p>
-            </article>
-            <article>
-              <span class="image"><img src="images/Spotify.jpg" alt="Spotify" /></span>
-              <h3>Spotify Popularity</h3>
-              <p>Random Forest regression on track features.</p>
-            </article>
-            <article>
-              <span class="image"><img src="images/CollegeERP.jpg" alt="College ERP" /></span>
-              <h3>College ERP</h3>
-              <p>Attendance & reporting automation.</p>
-            </article>
-            <article>
-              <span class="image"><img src="images/WomenSafety.jpg" alt="Women Safety" /></span>
-              <h3>Women Safety App</h3>
-              <p>K-means hotspotting + Google Maps API.</p>
+              <p>spaCy pipeline for NER and topic modeling.</p>
             </article>
           </div>
         </div>
@@ -126,28 +86,15 @@
       <!-- Contact -->
       <section id="contact">
         <div class="inner">
-          <header class="major"><h2>Contact</h2></header>
-          <p>Let’s connect — happy to collaborate on Data Analytics & SAP projects.</p>
-          <ul class="contact">
-            <li><span>Email:</span> <a href="mailto:akshay576shiwarkar@gmail.com">akshay576shiwarkar@gmail.com</a></li>
-            <li><span>Phone:</span> +44 07909313022</li>
-            <li><span>Location:</span> Belfast, Northern Ireland</li>
+          <header><h2>Contact</h2></header>
+          <ul>
+            <li>Email: <a href="mailto:akshay576shiwarkar@gmail.com">akshay576shiwarkar@gmail.com</a></li>
+            <li>Phone: +44 07909313022</li>
+            <li>Location: Belfast, Northern Ireland</li>
           </ul>
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <ul class="icons">
-            <li><a href="https://github.com/Akshay-S-PY" class="icon brands fa-github"><span>GitHub</span></a></li>
-            <li><a href="https://linkedin.com/in/akshay-shiwarkar/" class="icon brands fa-linkedin"><span>LinkedIn</span></a></li>
-          </ul>
-        </div>
-      </footer>
-
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
