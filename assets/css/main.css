@@ -203,3 +203,43 @@ h1, h2, h3, h4 { margin: 0 0 .6rem; font-weight: 800; letter-spacing: .2px; }
     max-height: 56px !important;
   }
 }
+
+/* ===== Skills (pill-list with icons) – fix grid, bullets, and logo sizing ===== */
+.pill-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important;
+  gap: 22px !important;
+}
+
+.pill-list.pill-icons li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+/* Turn the <img> itself into a 96×96 badge without changing HTML */
+.pill-list.pill-icons li img {
+  width: 96px;                 /* fixed badge box */
+  height: 96px;
+  padding: 16px;               /* inner padding for the logo */
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  object-fit: contain;         /* scale logo inside the box */
+  display: block;
+}
+
+/* Keep the label tidy */
+.pill-list.pill-icons li span {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Optional: center label beneath the icon (switch to column layout) */
+/*
+.pill-list.pill-icons li { flex-direction: column; gap: 8px; }
+*/
