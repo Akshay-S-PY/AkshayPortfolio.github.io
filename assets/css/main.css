@@ -252,6 +252,21 @@ nav .button:hover {
   .thumb{height:240px}
 }
 
+/* === About section tweaks === */
+#about, #summary {
+  padding: 60px 0 40px;   /* reduce vertical spacing */
+  text-align: left;       /* keep alignment consistent */
+  max-width: 900px;       /* narrower column for readability */
+  margin: 0 auto;         /* center within the page */
+}
+
+#about p, #summary p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+
 /* === Nav Email Me button fix === */
 nav .button {
   background: var(--accent);
