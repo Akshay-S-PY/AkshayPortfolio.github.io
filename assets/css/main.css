@@ -162,3 +162,44 @@ h1, h2, h3, h4 { margin: 0 0 .6rem; font-weight: 800; letter-spacing: .2px; }
   .thumb { height: 180px; }
   .hero .display { font-size: 2rem; }
 }
+/* ==== FIX SKILLS GRID & LOGO SIZING ==== */
+
+/* 1) Make sure the list renders as our grid and has no bullets */
+.skill-badges{
+  list-style: none !important;   /* remove • */
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important;
+  gap: 22px !important;
+}
+.skill{ text-align:center; }
+
+/* 2) Badge is a fixed box that centers its content */
+.badge{
+  width: 96px; height: 96px;
+  margin: 0 auto 10px;
+  border-radius: 16px;
+  background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;                /* nothing can spill out */
+  box-shadow: var(--shadow);
+}
+
+/* 3) Logos scale down uniformly inside the badge */
+.skill-badges img{
+  width: auto !important;
+  height: auto !important;
+  max-width: 64px !important;      /* hard cap: fits the 96x96 badge */
+  max-height: 64px !important;
+  object-fit: contain;
+  display: block;
+}
+
+/* Optional: smaller cap on very small screens to keep balance */
+@media (max-width: 480px){
+  .skill-badges img{
+    max-width: 56px !important;
+    max-height: 56px !important;
+  }
+}
