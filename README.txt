@@ -1,32 +1,81 @@
-Forty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Akshay Shiwarkar — Portfolio Website
+
+This is my personal portfolio website, built to showcase my projects, skills, and experience in **Data Analytics** and **SAP BASIS / S/4HANA**.  
+It includes sections for my **summary, skills & technology, projects, CV, and contact information**.
+
+🌐 **Live Website:** [akshayshiwarkar.co.uk](https://akshayshiwarkar.co.uk/)
+
+---
+
+## ✨ Features
+
+- **Hero Section** with name, tagline, and quick access buttons.
+- **Summary** of my professional profile.
+- **Skills & Technology** presented with clean, responsive icon badges.
+- **Projects** displayed as modern responsive cards, with:
+  - Descriptions
+  - GitHub links
+  - Live demo links (where available, e.g. Streamlit apps).
+- **CV Integration** (view online or download).
+- **Contact Section** with email, phone, and location.
+- **Responsive Design** — mobile-friendly layout with grid systems.
+- **Custom Domain** deployed on GitHub Pages.
+
+---
+
+## 🛠 Tech Stack
+
+- **HTML5 / CSS3**
+- **Custom CSS styling** with flexbox & CSS grid
+- **Vanilla JS** (minimal, mainly for navigation)
+- **GitHub Pages** for hosting
+- **Custom Domain**: `akshayshiwarkar.co.uk`
+
+---
+
+## 📂 Repository Structure
+
+.
+├── assets/
+│ ├── css/
+│ │ └── main.css # main stylesheet
+│ ├── js/ # scripts (optional)
+│ └── cv/ # CV PDF
+├── images/
+│ ├── icons/ # skill logos (SVG/PNG)
+│ └── project-thumbs/ # project preview images
+├── index.html # homepage
+├── README.md # this file
+└── CNAME # custom domain config
 
 
-This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
-creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
-set up to smoothly transition to secondary landing pages (for which a separate page
-template is provided), and includes a number of neat effects (check out the menu!),
-extra features, and all the usual stuff you'd expect. Hope you dig it!
+---
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+## 🚀 Deployment
 
-(* = not included)
+The site is hosted using **GitHub Pages**.
 
-AJ
-aj@lkn.io | @ajlkn
+1. Push changes to the `main` branch.
+2. GitHub Pages auto-builds and serves from `https://akshayshiwarkar.co.uk/`.
+3. DNS records are configured to point to GitHub Pages servers.
 
+---
 
-Credits:
+## 🧾 Projects Featured
 
-	Demo Images:
-		Unsplash (unsplash.com)
+- **AI Agent Chatbot** — LangGraph, Groq, OpenAI, Tavily API, Streamlit
+- **Classifying Countries by SDG Progress** — PCA, K-means
+- **NLP Analysis of NHS Training Materials** — spaCy NLP pipeline
+- **Bitcoin Price Prediction** — LSTM, Gradient Boosting, Regression
+- **Spotify Track Popularity** — Random Forest regression
+- *(more coming soon)*
 
-	Icons:
-		Font Awesome (fontawesome.io)
+---
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## 📬 Contact
+
+- **Email:** [akshay576shiwarkar@gmail.com](mailto:akshay576shiwarkar@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/akshay-shiwarkar](https://www.linkedin.com/in/akshay-shiwarkar/)  
+- **GitHub:** [github.com/Akshay-S-PY](https://github.com/Akshay-S-PY)
+
+---
