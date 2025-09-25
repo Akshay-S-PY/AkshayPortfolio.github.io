@@ -88,106 +88,99 @@
   <section class="section" id="work">
     <div class="container">
       <div class="grid featured">
-<!-- AI Agent Chatbot -->
-        <article class="card wide">
-          <div class="thumb">
-            <img
-              src="images/ai-agent.webp"
-              alt="AI Agent Chatbot"
-              onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22240%22 viewBox=%200%200%20400%20240%3E<rect width=%22400%22 height=%22240%22 rx=%2212%22 fill=%22%231f2543%22/><text x=%2220%22 y=%22135%22 fill=%22%239bf1ff%22 font-family=%22Segoe%20UI%22 font-size=%2220%22>AI Agent Chatbot</text></svg>';"
-            />
-          </div>
+<!-- Projects -->
+<section id="projects" class="section">
+  <div class="inner">
+    <header class="section-head">
+      <h2>Projects</h2>
+    </header>
+
+    <div class="cards">
+      <!-- AI Agent Chatbot -->
+      <article class="card">
+        <div class="thumb">
+          <img
+            src="images/ai-agent.jpg"
+            alt="AI Agent Chatbot"
+            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22240%22 viewBox=%200%200%20400%20240%3E<rect width=%22400%22 height=%22240%22 rx=%2212%22 fill=%22%231f2543%22/><text x=%2220%22 y=%22135%22 fill=%22%239bf1ff%22 font-family=%22Segoe%20UI%22 font-size=%2220%22>AI Agent Chatbot</text></svg>';"
+          />
+        </div>
+        <div class="body">
           <h3>AI Agent Chatbot</h3>
           <p>
-            Built a full-stack chatbot leveraging <strong>LangGraph ReAct agents</strong> with Groq (Llama 3, Mixtral) and OpenAI GPT-4o-mini,
-            integrated with Tavily API for real-time web search. Delivered a Streamlit UI with multi-turn memory,
-            customizable system prompts, and robust error-handling. Deployed on Streamlit Cloud.
+            Full-stack chatbot using <strong>LangGraph ReAct agents</strong> with Groq (Llama 3, Mixtral) and OpenAI GPT-4o-mini,
+            integrated with Tavily for real-time web search. Streamlit UI with multi-turn memory, custom system prompts, and
+            robust fallback/error handling. Deployed on Streamlit Cloud.
           </p>
           <ul class="actions">
             <li><a class="button small" href="https://github.com/Akshay-S-PY/AI_Agent_Chatbot" target="_blank">GitHub</a></li>
             <li><a class="button small primary" href="https://agentbyakshay.streamlit.app/" target="_blank">Try it out</a></li>
           </ul>
-        </article>
+        </div>
+      </article>
 
-      </div>
+      <!-- SDG Clustering -->
+      <article class="card">
+        <div class="thumb">
+          <img src="images/SDG.jpg" alt="SDG Clustering" />
+        </div>
+        <div class="body">
+          <h3>Classifying Countries by SDG Progress</h3>
+          <p>PCA + K-means to reveal development patterns beyond traditional groupings.</p>
+          <ul class="actions">
+            <li><a class="button small" href="#" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </article>
 
-      <div class="grid portfolio" style="margin-top:26px">
+      <!-- NHS NLP -->
+      <article class="card">
+        <div class="thumb">
+          <img src="images/NHS.jpg" alt="NLP Analysis of NHS Training Materials" />
+        </div>
+        <div class="body">
+          <h3>NLP Analysis of NHS Training Materials</h3>
+          <p>spaCy pipeline for tokenization, NER, topic modeling; surfaced key themes for education.</p>
+          <ul class="actions">
+            <li><a class="button small" href="#" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </article>
 
-        <!-- UN SDG Clustering -->
-        <article class="card">
-          <figure class="thumb">
-            <img src="images/SDG.png" alt="SDG Clustering" onerror="this.style.visibility='hidden'">
-          </figure>
-          <div class="card-body">
-            <p class="eyebrow">Clustering · PCA · K-means</p>
-            <h3 class="card-title">Classifying Countries by SDG Progress</h3>
-            <p class="card-text">
-              Classified countries by progress toward the UN SDGs using PCA and K-means to reveal patterns beyond
-              traditional groupings. Built a clean feature space, robust scaling and validation to surface clusters that
-              align with real development trajectories.
-            </p>
-            <div class="card-actions">
-              <a class="btn btn-pill" href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </article>
+      <!-- Bitcoin Prediction -->
+      <article class="card">
+        <div class="thumb">
+          <img src="images/Bitcoin.jpg" alt="Bitcoin Price Prediction" />
+        </div>
+        <div class="body">
+          <h3>Bitcoin Price Prediction</h3>
+          <p>Linear/RF/GBM + LSTM; used market feeds &amp; sentiment to improve accuracy.</p>
+          <ul class="actions">
+            <li><a class="button small" href="#" target="_blank">GitHub</a></li>
+            <li><a class="button small" href="#" target="_blank">Kaggle</a></li>
+          </ul>
+        </div>
+      </article>
 
-        <!-- NHS -->
-        <article class="card">
-          <figure class="thumb">
-            <img src="images/NHS.jpg" alt="NHS NLP" onerror="this.style.visibility='hidden'">
-          </figure>
-          <div class="card-body">
-            <p class="eyebrow">NLP · spaCy · Topic Modeling</p>
-            <h3 class="card-title">NLP Analysis of NHS Training Materials</h3>
-            <p class="card-text">
-              Tokenization, word frequency, NER and topic models (LDA) to extract themes in patient care &amp; staff training.
-              Outputs informed content design and opportunities for AI-driven education tools.
-            </p>
-            <div class="card-actions">
-              <a class="btn btn-pill" href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Bitcoin -->
-        <article class="card">
-          <figure class="thumb">
-            <img src="images/Bitcoin.jpg" alt="Bitcoin Prediction" onerror="this.style.visibility='hidden'">
-          </figure>
-          <div class="card-body">
-            <p class="eyebrow">Time-series · LSTM · Ensembles</p>
-            <h3 class="card-title">Bitcoin Price Prediction</h3>
-            <p class="card-text">
-              Regression (Linear, RF, GBM) + LSTM with market indices, real-time feeds and sentiment (Yahoo Finance API).
-              Improved short-horizon accuracy for a volatile asset.
-            </p>
-            <div class="card-actions">
-              <a class="btn btn-pill" href="https://www.kaggle.com/code/akshayshiwarkar/bitcoin-price-prediction" target="_blank">Kaggle</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Spotify -->
-        <article class="card">
-          <figure class="thumb">
-            <img src="images/Spotify.jpg" alt="Spotify Popularity" onerror="this.style.visibility='hidden'">
-          </figure>
-          <div class="card-body">
-            <p class="eyebrow">Regression · Random Forest</p>
-            <h3 class="card-title">Spotify Track Popularity</h3>
-            <p class="card-text">
-              Feature engineering + outlier handling; tuned Random Forest achieved a competitive RMSE (~7.5) in a Kaggle
-              class challenge; compared against XGB/Linear baselines.
-            </p>
-            <div class="card-actions">
-              <a class="btn btn-pill" href="https://github.com/Akshay-S-PY/Machine-Learning" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </article>
-      </div>
+      <!-- Spotify Popularity -->
+      <article class="card">
+        <div class="thumb">
+          <img src="images/Spotify.jpg" alt="Spotify Track Popularity" />
+        </div>
+        <div class="body">
+          <h3>Spotify Track Popularity</h3>
+          <p>
+            Feature engineering + Random Forest regression model for predicting track popularity
+            (RMSE ≈ 7.5). Showcased skills in ML regression, feature extraction, and evaluation.
+          </p>
+          <ul class="actions">
+            <li><a class="button small" href="#" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ====== Contact (dark footer block) ====== -->
   <footer class="contact-footer" id="contact">
@@ -223,6 +216,7 @@
   </script>
 </body>
 </html>
+
 
 
 
