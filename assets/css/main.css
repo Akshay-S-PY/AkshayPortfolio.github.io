@@ -154,3 +154,39 @@ nav .button:hover {
   background: #11162a;
   color: #fff !important;
 }
+/* --- Project cards: consistent structure & aligned buttons --- */
+.card{
+  display:flex;                    /* make the whole card a column */
+  flex-direction:column;
+}
+.card .body{
+  display:flex;
+  flex-direction:column;
+  flex:1;                          /* fill remaining height */
+}
+.card .actions{
+  margin-top:auto;                 /* push buttons to the bottom */
+  display:flex;
+  gap:10px;
+  list-style:none;                 /* remove bullets */
+  padding:0;
+}
+.card .button.small{padding:.42em .9em;font-size:.9rem}
+
+/* make titles align consistently */
+.card h3{min-height:2.6em; display:flex; align-items:flex-end;}
+
+/* ensure thumbnails are consistent */
+.thumb{height:200px}
+@media (max-width:680px){ .thumb{height:160px} }
+
+/* primary button color inside cards (e.g., Try it out) */
+.card .button.primary{
+  background: var(--accent);
+  color:#113 !important;
+}
+.card .button.primary:hover{
+  background:#fff;
+  color:#113 !important;
+}
+
