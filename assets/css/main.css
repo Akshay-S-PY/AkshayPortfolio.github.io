@@ -136,3 +136,21 @@ nav .button:hover {
   background: #fff;
   color: #242943 !important;
 }
+.card .button.primary {
+  background: var(--accent);
+  color: #113 !important;
+}
+.card .button.primary:hover {
+  background: #fff;
+  color: #113 !important;
+}
+nav .button {
+  background: #242943;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+nav .button:hover {
+  background: #11162a;
+  color: #fff !important;
+}
