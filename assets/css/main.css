@@ -243,3 +243,43 @@ h1, h2, h3, h4 { margin: 0 0 .6rem; font-weight: 800; letter-spacing: .2px; }
 /*
 .pill-list.pill-icons li { flex-direction: column; gap: 8px; }
 */
+/* ==== Skills grid — icons above labels, no white squares ==== */
+.pill-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 24px;
+  justify-items: center;   /* center items in grid cells */
+}
+
+.pill-list.pill-icons li {
+  display: flex;
+  flex-direction: column;  /* stack icon over label */
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo itself (no white background, scaled properly) */
+.pill-list.pill-icons li img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.12)); /* subtle polish */
+  background: none;  /* ✅ removes the white box */
+  border-radius: 0;  /* no rounded square */
+  box-shadow: none;
+}
+
+/* Label styling */
+.pill-list.pill-icons li span {
+  font-weight: 700;
+  font-size: .9rem;
+  color: #111827;  /* dark text */
+  text-align: center;
+}
+
+
+
