@@ -100,7 +100,7 @@
     .logo {
       font-weight: 800;
       font-size: 1.25rem;
-      color: var(--accent-dark);
+      color: var(--accent);
       text-decoration: none;
       letter-spacing: -0.5px;
       margin-right: auto;
@@ -337,7 +337,7 @@
       display: inline-block;
       font-family: var(--font-mono);
       font-size: 0.85rem;
-      color: var(--accent-dark);
+      color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 16px;
@@ -1139,27 +1139,12 @@
       }
 
       reset() {
-        // Concentrate particles on left and right edges, avoid middle
-        const sideWidth = canvas.width * 0.3; // 30% on each side
-        const middleStart = canvas.width * 0.35;
-        const middleEnd = canvas.width * 0.65;
-        
-        // 70% on sides, 30% in middle (sparse)
-        if (Math.random() < 0.7) {
-          // Place on sides
-          this.x = Math.random() < 0.5 
-            ? Math.random() * sideWidth 
-            : canvas.width - Math.random() * sideWidth;
-        } else {
-          // Place in middle (sparse)
-          this.x = middleStart + Math.random() * (middleEnd - middleStart);
-        }
-        
+        this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.vx = (Math.random() - 0.5) * 0.6;
-        this.vy = (Math.random() - 0.5) * 0.6;
-        this.radius = Math.random() * 2.5 + 1;
-        this.opacity = Math.random() * 0.5 + 0.25;
+        this.vx = (Math.random() - 0.5) * 0.5;
+        this.vy = (Math.random() - 0.5) * 0.5;
+        this.radius = Math.random() * 2 + 1;
+        this.opacity = Math.random() * 0.5 + 0.2;
       }
 
       update() {
@@ -1180,14 +1165,14 @@
 
     function initParticles() {
       particles = [];
-      const particleCount = Math.floor((canvas.width * canvas.height) / 10000);
-      for (let i = 0; i < Math.min(particleCount, 120); i++) {
+      const particleCount = Math.floor((canvas.width * canvas.height) / 15000);
+      for (let i = 0; i < Math.min(particleCount, 100); i++) {
         particles.push(new Particle());
       }
     }
 
     function connectParticles() {
-      const maxDistance = 180;
+      const maxDistance = 150;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x;
@@ -1195,10 +1180,10 @@
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < maxDistance) {
-            const opacity = (1 - distance / maxDistance) * 0.4;
+            const opacity = (1 - distance / maxDistance) * 0.3;
             ctx.beginPath();
             ctx.strokeStyle = `rgba(6, 182, 212, ${opacity})`;
-            ctx.lineWidth = 1.5;
+            ctx.lineWidth = 1;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
             ctx.stroke();
